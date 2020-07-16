@@ -1,0 +1,33 @@
+<mat-nav-list>
+  <mat-list-item [tabindex]="1" routerLinkActive="active-link" (click)="closeSideNav()" routerLink="about">
+    <a mat-button class="sideBar-nav-links {{isExpanded ? 'sideBar-nav-text-links': 'sideBar-nav-icon-links'}}">
+      <em><img class = "study-icon" alt= "" src="assets/svg/save.svg"></em>
+      <span class="sideBar-nav-links-text" *ngIf="isMobileView || isExpanded" i18n>About</span>
+    </a>
+  </mat-list-item>
+  <mat-list-item [tabindex]="2" routerLinkActive="active-link" (click)="closeSideNav()" routerLink="services">
+    <a mat-button class="sideBar-nav-links {{isExpanded ? 'sideBar-nav-text-links': 'sideBar-nav-icon-links'}}">
+      <em><img class = "study-icon" alt= "" src="assets/svg/services.svg"></em>
+      <span class="sideBar-nav-links-text" *ngIf="isMobileView || isExpanded" i18n>services</span> 
+    </a>
+  </mat-list-item>
+  <mat-list-item [tabindex]="3" routerLinkActive="active-link" (click)="closeSideNav()" routerLink="contactus">
+    <a mat-button class="sideBar-nav-links {{isExpanded ? 'sideBar-nav-text-links': 'sideBar-nav-icon-links'}}">
+      <em><img class = "study-icon" alt= "" src="assets/svg/Profile.svg"></em>
+      <span class="sideBar-nav-links-text" *ngIf="isMobileView || isExpanded" i18n>contactus  </span> 
+    </a>
+  </mat-list-item>
+  
+  <mat-list-item [tabindex]="4" routerLinkActive="active-link" (click)="closeSideNav()" routerLink="userinfo">
+    <a mat-button class="sideBar-nav-links {{isExpanded ? 'sideBar-nav-text-links': 'sideBar-nav-icon-links'}}">
+      <em><img class = "study-icon" alt= "" src="assets/svg/userinfo.svg"></em>
+      <span class="sideBar-nav-links-text" *ngIf="isMobileView || isExpanded" i18n>User Info</span>
+    </a>
+  </mat-list-item>
+  <mat-list-item [tabindex]="5" routerLinkActive="active-link" (click)="closeSideNav()" routerLink="logistics">
+    <a mat-button class="sideBar-nav-links {{isExpanded ? 'sideBar-nav-text-links': 'sideBar-nav-icon-links'}}">
+      <em class="icon-new-logistics"></em>
+      <span class="sideBar-nav-links-text" *ngIf="isMobileView || isExpanded" i18n>Logistics</span>
+    </a>
+  </mat-list-item>
+</mat-nav-list>

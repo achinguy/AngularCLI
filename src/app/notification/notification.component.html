@@ -1,0 +1,28 @@
+<div class="notification-div">
+    <mat-icon *ngIf="data.messageType !== 'KitError'" class="icon-class" (click)="onClose()">close</mat-icon>
+    <div class="flex mt_15">
+      <div>
+        <!-- <mat-icon *ngIf="data.messageType === 'Success'" class="icon-msg-class">done</mat-icon> -->
+        <mat-icon *ngIf="data.messageType === 'Info'" class="icon-msg-class">info outline</mat-icon>
+        <mat-icon *ngIf="data.messageType === 'Warning'" class="icon-msg-class">warning</mat-icon>
+        <mat-icon *ngIf="data.messageType === 'Error'" class="icon-msg-class">report</mat-icon>
+      </div>
+      <div></div>
+      <div class="body-content">
+        <div *ngIf="data.messageType !== 'KitError'" class="header-content">
+          <span class="spanfont">
+            {{data.messageType}}
+          </span>
+        </div>
+        <p class="width_105" [innerHtml]="data.message | newline">
+        </p>
+      </div>
+    </div>
+  
+    <div class="btn-div-class" *ngIf="data.showButton">
+      <button mat-button (click)="onClose()" [ngClass]="{'btn-success': data.messageType === 'Success',
+      'btn-Error': data.messageType === 'Error',
+      'btn-Warning': data.messageType === 'Warning', 
+      'btn-Info': data.messageType === 'Info'   }">{{data.buttonText}}</button>
+    </div>
+  </div>

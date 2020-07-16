@@ -1,0 +1,37 @@
+.footer-button {
+    float: right;
+    margin-top: -2%;
+    color: white;;
+}
+
+
+.no-button {
+    background: black;
+    min-width: 60px !important;
+    color: white;
+    &:hover {
+        cursor: pointer;
+        color :#00A7CE;
+      }
+}
+
+.yes-button {
+    background: black;
+    min-width: 60px !important;
+    color: white;
+    &:hover {
+        cursor: pointer;
+        color :#00A7CE;
+      }
+}
+
+.message {
+    color: white;
+    font-size: 16px;
+    padding: 22px;
+}
+
+.accessing-theme {
+    margin-top: -2%;
+    background-color: black;
+}

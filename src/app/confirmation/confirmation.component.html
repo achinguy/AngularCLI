@@ -1,0 +1,25 @@
+<div class="accessing-theme" [ngClass]='modalClass'>
+  
+    <mat-card-content tabindex="-1">
+        <div class = "message">
+          {{data.message}}
+        </div>
+        <div >
+        </div>
+        <div *ngIf="!data.info" class="footer-button" >
+
+              <button mat-raised-button class = "no-button" (click)="closeModal('No')">
+                NO
+                </button>
+                <button mat-raised-button class = "yes-button" (click)="closeModal('Yes')">
+                  YES
+                </button>
+        </div>
+        <div *ngIf="data.info" class="footer-button" >
+
+            <button mat-raised-button class = "yes-button" (click)="closeModal('Yes')">
+              OK
+            </button>
+    </div>
+    </mat-card-content>
+  </div>

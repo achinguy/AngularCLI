@@ -1,0 +1,30 @@
+<mat-toolbar class="page-header mat-elevation-z3">
+  <div class="header-logo-container">
+    <img src="assets/images/logo.JPG" alt="Logo" class="" [class]="!isExpanded ? 'logo icon-menuClosed' : 'logo'"  />
+    <button mat-icon-button (click)="toggleSidebar()" class="" [class]="!isExpanded ? 'menu-icon menu-closed mat-icon-button' : 'menu-icon mat-icon-button'">
+      <mat-icon>
+        <i class="fa fa-bars" aria-hidden="true"></i>
+      </mat-icon>
+    </button>
+  </div>
+  <div class="nav-bar">
+    <div class="notify-icon">
+     
+      <button mat-icon-button (click)='logOut()' class="log-icon"  matTooltip="Logout">
+        <mat-icon>
+          <span>Welcome {{userEmail$ | async}}</span>
+          <i class="fa fa-sign-out" aria-hidden="true" *ngIf="isLoggedIn"></i>
+        </mat-icon>
+      </button>
+      <!-- <a href (click)='logOut()'><i class="fa fa-power-off" aria-hidden="true" *ngIf="isLoggedIn"></i></a> -->
+      <a href="#" (click)='login()'>
+        <i class="fa fa-sign-in" aria-hidden="true" *ngIf="!isLoggedIn"></i>
+      </a>
+    </div>
+    <!-- <a routerLink="user-profile" aria-hidden="true" class="user-chip" *ngIf="isLoggedIn" matTooltip="{{ name }}">
+      <div class="chip chip-ellipse">
+        <img src="assets/images/profile.png" alt="Logged in user name"> {{ name }}
+      </div>
+    </a> -->
+  </div>
+</mat-toolbar>

@@ -1,0 +1,19 @@
+<p>
+  Product loaded here.
+  welcome {{username}}
+</p>
+<br><br><br>
+  Two way binding<br>
+  <input type="text" [(ngModel)]="rank">
+  Rank {{rank}}
+  <br><br><br>
+  <img [src]="logoUrl" style="width:250px;height:350px">
+<br><br>
+  <input type="text" value="color"/>
+  <button (click)="change()">Change Color</button>
+<br>
+Strutural Directive
+  <div *ngFor = "let p of products">{{p}}</div>
+<br>
+  Attribute Directive
+<span *ngIf>

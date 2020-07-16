@@ -1,0 +1,81 @@
+.mat-icon {
+    cursor: pointer;
+    font-size: 15px;
+    height: 6px;
+    width: 12px;
+    margin-right: 4px;
+    margin-top: 1px;
+}
+.margin_top_1 {
+    margin-top: 1%;
+}
+.margin-bottom-2 {
+    margin-bottom: 2%;
+}
+.padding-class {
+    padding: 2%;
+}
+.date-class {
+    float: right;
+}
+.scroll-class {
+    overflow: auto;
+    height: 660px;
+    width: 330px;
+}
+.span-class {
+    cursor: pointer;
+    color: #00a7ce;
+    font-size: 14px;
+    margin: 1%;
+}
+
+.documnet-list {    
+    background-color: white;
+    color: black;
+}
+
+.div-button {
+    display: flex;
+    justify-content: space-between;
+    margin: 2%;
+}
+.mat-divder-class {
+    margin-top: 6% !important;
+}
+
+.title_block {
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 5px;
+    margin-bottom: 5px;
+}
+::ng-deep .ui-fileupload-buttonbar .ui-button {
+    margin-top: 0.35em;
+}
+
+@media only screen and (max-width: 600px) {
+    .scroll-class {
+        overflow: auto;
+        height: 920px;
+        width: 180px;
+    }
+}
+
+@media only screen and (max-height: 746px) {
+    .scroll-class {
+        overflow: auto;
+        height: 460px;
+        width: 310px;    
+    }   
+}
+@media only screen and (max-height: 500px) {
+    .scroll-class {
+        overflow: auto;
+        height: 360px;
+        width: 310px;    
+    }
+}
+
+.disabled-class {
+    display: none;
+  }

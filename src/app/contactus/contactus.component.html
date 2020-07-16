@@ -1,0 +1,24 @@
+
+  <div [ngClass]="'redTheme'">{{pageTtile}}</div>
+  <p>
+  contactus works! You can only see contact us when we see services first.
+</p>
+<div *ngIf="abouts.length; else falseCondition">
+  <table class="table table-bordered">
+    <tr class="bg-primary ">
+        <th>ID</th>
+        <th>Name</th>
+        <var>quantity</var>
+        <th>Price</th>
+    </tr>
+    <tr *ngFor="let about of abouts">
+        <td>{{about.id}}</td>
+        <td>{{about.name}}</td>
+        <td>{{about.quantity}}</td>
+        <td>{{about.price}}</td>
+    </tr>
+  </table>
+</div>
+<ng-template #falseCondition>
+  <p class="alert alert-danger">No rows Found</p>
+</ng-template>

@@ -1,0 +1,129 @@
+<div class="communications-gird">
+  <form class="form" [formGroup]="userForm">
+  
+    <div class="footer-container"></div>
+    <table class='table-border'>
+      <tr>
+        <td>name</td>
+        <td>
+          <input name="id" type="hidden" />
+          <input class="inputMaterial" type="text" formControlName="name" [matAutocomplete]="NameAutofill" name="name" required />
+          <mat-autocomplete #NameAutofill="matAutocomplete" [displayWith]="filterNameObj" (optionSelected)='onSiteSelection($event)'>
+            <mat-option *ngFor="let item of filteredName | async" [value]="item">
+                <span>{{ item.name || 'null' }}</span>
+            </mat-option>
+        </mat-autocomplete>
+        </td>
+      </tr>
+
+      <tr>
+        <td>address</td>
+        <td> 
+          <input class="inputMaterial" type="text" formControlName="address" name="address" required>
+        </td>
+      </tr>
+      <tr>
+        <td colspan="2">
+          <button type="submit" (click)="onSave(userForm.value)" value="{{valbutton}}">Submit</button>   
+        </td>
+      </tr>
+    </table>
+  </form>
+
+  <!-- <table class='table-border'>  
+  
+  <tr>  
+    <td>Id</td>  
+    <td>Name</td>  
+    <td>Address</td>  
+    <td>Edit</td>  
+    <td>Delete</td>  
+  </tr>  
+  <tr *ngFor="let kk of Repdata;let ind = index">  
+       
+    <td>{{ind + 1}}</td>  
+    <td>{{kk.name}}</td>  
+    <td>{{kk.address}}</td>  
+    <td><a (click)="edit(kk)" style="color:blueviolet">Edit</a></td>  
+    <td><a (click)="delete(kk.id)" style="color:blueviolet">Delete</a>  </td>  
+  </tr>  
+</table>   -->
+
+<div class="search-button-div">
+  <input class="inputMaterial searchText input-text" type="text" [(ngModel)]="searchText" placeholder="Search" />
+  <button type="button" class="searchButton mat-raised-button" [disabled]="!searchText" (click)="apiSearchTest()"
+    place i18n>Search</button>
+</div>
+  <mat-table #table [dataSource]="dataSource" class="grid">
+
+    <ng-container matColumnDef="name">
+      <mat-header-cell *matHeaderCellDef i18n> NAME </mat-header-cell>
+      <mat-cell *matCellDef="let element; let i = index;">
+        <span *ngIf="!element.isEdit">
+          <a (click) = "showUserDetails(element)">{{element.name}}</a>
+        </span>
+        <div *ngIf="element.isEdit">
+          <mat-form-field floatLabel="never">
+            <input type="text" [(ngModel)]="element.name">
+          </mat-form-field>
+        </div>
+      </mat-cell>
+    </ng-container>
+    <ng-container matColumnDef="address">
+      <mat-header-cell *matHeaderCellDef i18n> Address </mat-header-cell>
+      <mat-cell *matCellDef="let element">{{element.address}}</mat-cell>
+    </ng-container>
+    <ng-container matColumnDef="actions">
+      <mat-header-cell *matHeaderCellDef> </mat-header-cell>
+      <mat-cell *matCellDef="let element; let i = index;" class="table-mat-cell">
+        <span>
+          <a *ngIf="!element.isEdit" class="edit-icon" (click)="edit(element, $event)">
+            <em>
+              <span class='img-edit'></span>
+            </em>
+          </a>
+          <a class="edit-icon" *ngIf="element.isEdit" (click)="onSave(element)">
+            <em>
+              <span class='img-save'></span>
+            </em>
+          </a>
+        </span>
+        <span>
+          <a *ngIf="!element.isEdit" class="trash-position" (click)="delete(element)">
+            <em>
+              <span class='img-delete'></span>
+            </em>
+          </a>
+
+          <a *ngIf="element.isEdit" (click)="cancel(element, $event)">
+            <em>
+              <span class='img-cancel'></span>
+            </em>
+          </a>
+        </span>
+
+      </mat-cell>
+    </ng-container>
+    <mat-header-row *matHeaderRowDef="displayedColumns;"></mat-header-row>
+    <mat-row *matRowDef="let row; columns: displayedColumns;"></mat-row>
+  </mat-table>
+  <div *ngIf="paginationData.TotalPageCount > 1" class="paginator">
+    <span class="page-size"></span>
+      
+    <label class="material-label" i18n>Rows per page:</label>
+    <select (change)="onPageSizeChange($event, value)">
+      <option value="5">5</option> 
+      <option value="20">20</option>
+      <option value="100">100</option>
+    </select>
+    <span class="next-icon">{{paginationData.page}} of {{paginationData.TotalPageCount}}</span>
+    <span>
+      <i matTooltip="Previous" class="fa {{(!paginationData.HasPreviousPage) ? 'disable-icon' : ''}}"
+        (click)="moveTestDetails('prev')">&#xf104;</i>
+    </span>
+    <span>
+      <i matTooltip="Next" class="fa next {{(!paginationData.HasNextPage) ? 'disable-icon' : ''}}"
+        (click)="moveTestDetails('next')">&#xf105;</i>
+    </span>
+  </div>
+</div>

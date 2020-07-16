@@ -1,0 +1,151 @@
+@import "./css/main";
+.page-header {
+  background-color: $color_blue;
+  flex-direction: row;
+  display: flex;
+  justify-content: space-between;
+  z-index: 2;
+}
+
+.page-container {
+  top: 64px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.page-header {
+  position: fixed;
+  background-color: $color_blue;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+.page-body {
+  display: flex;
+  height: calc(100vh - 100px);
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 10px 15px;
+}
+
+@media only screen and (max-width: 600px) {
+  .page-container {
+    top: 53px;
+  }
+  .menu-icon.menu-closed,
+  .menu-icon {
+    left: 1rem;
+    top: 6px;
+  }
+  .logo {
+    left: 80px;
+  }
+}
+
+.log-icon {
+  vertical-align: bottom;
+}
+
+// for right side global pannel
+.global-sidenav {
+  display: flex;
+  justify-content: center;
+  width: 60px;
+  background: #25b7f7;
+  color: #ffffff;
+}
+
+:host {
+    display: flex;
+    flex-direction: column-reverse;
+    height: 100vh;
+  }
+  
+  .layout-menu {
+    flex: 0 0 0;
+  }
+  
+  .layout-content {
+    height: 100%;
+    width: 100%;
+    background-color: white;
+    overflow: auto;
+  }
+  
+  .menu {
+    display: flex;
+    background-color:gray;
+  }
+  
+  .menu-item {
+    flex: 1 0 auto;
+  
+    & mat-icon {
+      top: 8px;
+      position: relative;
+      width: 36px;
+      height: 36px;
+    }
+  }
+  
+  .selected {
+    color: Red;
+    fill: Red;
+    font-weight: bold;
+  }
+  
+  @media screen and (min-width : 768px) {
+    :host {
+      display: flex;
+      flex-direction: row;
+    }
+  
+    .menu {
+      flex-direction: column;
+      width: 8rem;
+      height: 100%;
+    }
+  
+    .menu-item {
+      flex: 0 0 auto;
+      padding-top: 5px;
+      padding-bottom: 5px;
+    }
+  
+    .progress-bar {
+      position: relative;
+    }
+  }
+  
+  .mat-progress-bar {
+    position: relative;
+  }
+  
+  mat-toolbar {
+    position: relative;
+    width: 10%;
+  
+    span {
+      position: absolute;
+        float: right;
+      &.right {
+        right: 16px;
+      }
+  
+      &.btn {
+        border: 2px solid white;
+        padding: 2px 10px;
+        border-radius: 4px;
+        cursor: pointer;
+  
+        &:hover {
+          color: pink;
+          background-color: white;
+        }
+      }
+    }
+  }
+  

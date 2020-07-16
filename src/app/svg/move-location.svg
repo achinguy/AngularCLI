@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="13px" height="13px" viewBox="0 0 13 13" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.2 (67145) - http://www.bohemiancoding.com/sketch -->
+    <title>ion-ios-box - Ionicons</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Move-location" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Accessioning:-location-sample" transform="translate(-1164.000000, -419.000000)" fill="#000000">
+            <g id="Body" transform="translate(80.000000, 80.000000)">
+                <g id="table" transform="translate(20.000000, 258.000000)">
+                    <g id="table_content" transform="translate(0.000000, 27.000000)">
+                        <g id="Group-6" transform="translate(9.000000, 0.000000)">
+                            <g id="storage" transform="translate(965.000000, 19.000000)">
+                                <g id="input-field\">
+                                    <path d="M90.625,47.125 L90.625,39.625 L101.875,39.625 L101.875,47.125 L90.625,47.125 Z M95,40.875 C94.5833313,40.875 94.375,41.0833313 94.375,41.5 C94.375,41.9166687 94.5833313,42.125 95,42.125 L97.5,42.125 C97.9166687,42.125 98.125,41.9166687 98.125,41.5 C98.125,41.0833313 97.9166687,40.875 97.5,40.875 L95,40.875 Z M90,35.875 L102.5,35.875 L102.5,39 L90,39 L90,35.875 Z" id="ion-ios-box---Ionicons"></path>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

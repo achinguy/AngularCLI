@@ -1,0 +1,112 @@
+@import "./../../../css/main";
+
+.page-header {
+  background-color: $color_blue;
+  flex-direction: row;
+  display: flex;
+  justify-content: space-between;
+  z-index: 2;
+}
+.page-header {
+  position: fixed;
+  background-color: $color_blue;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+.header-logo-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: $sideBar-width;
+}
+.logo {
+  margin: 0;
+  float: left;
+  padding: 0;
+//   position: absolute;
+  left: 50px;
+  top: 19px;
+}
+.menu-icon {
+//   position: absolute;
+  left: 15rem;
+  color: #ffffff;
+  top: 9px;
+}
+.menu-icon.menu-closed {
+  left: 5rem;
+}
+.icon-menuClosed{
+  left: 14px;
+}
+.nav-bar {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.page-header-search-box {
+  color: $color_white;
+}
+
+.page-header-search-box > label{
+  background-color: $color_white;
+}
+
+.mat-form-field-underline {
+  background-color: $color_white;
+}
+
+.chip {
+  display: inline-block;
+  height: 32px;
+  font-size: 13px;
+  font-weight: 500;
+  color: $color_dark_gray;
+  line-height: 32px;
+  padding: 0 12px;
+  border-radius: 16px;
+  background-color: $color_light_gray;
+}
+
+.chip img {
+  float: left;
+  margin: 0 8px 0 -12px;
+  height: 32px;
+  width: 32px;
+  border-radius: 50%;
+}
+
+.user-chip {
+  vertical-align: middle;
+  display: inline-grid;
+}
+
+.chip-ellipse {
+  width: 100px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+
+
+@media only screen and (max-width: 600px) {
+  .page-container{
+    top: 53px;
+  }
+  .menu-icon.menu-closed,
+  .menu-icon {
+
+    left: 1rem;
+    top: 6px;
+  }
+  .logo {
+    left: 80px;
+  }
+}
+.log-icon {
+ vertical-align: bottom;
+}

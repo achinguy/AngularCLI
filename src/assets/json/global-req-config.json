@@ -1,0 +1,36 @@
+{
+    "GlobalRequirementConfig": [
+        {
+            "screenId": 1,
+            "screenName": "Dashboard",
+            "screenEntity": "Subject",
+            "entityDispId": "SubjectId",
+            "urlPath": "/home",
+            "globalPanalItems": [
+                {
+                    "isAttachementEnabled": false,
+                    "isAuditEnabled": false,
+                    "isReportEnabled": true,
+                    "isHelpEnabled": true
+                }
+            ],
+            "childEntities": []
+        },
+        {
+            "screenId": 2,
+            "screenName": "Kit",
+            "screenEntity": "Subject",
+            "entityDispId": "SubjectId",
+            "urlPath": "/kit",
+            "globalPanalItems": [
+                {
+                    "isAttachementEnabled": false,
+                    "isAuditEnabled": false,
+                    "isReportEnabled": true,
+                    "isHelpEnabled": true
+                }
+            ],
+            "childEntities": []
+        }
+    ]
+}

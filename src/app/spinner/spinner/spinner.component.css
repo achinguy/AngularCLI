@@ -1,0 +1,45 @@
+.spinner-full {
+ 
+    z-index: 2000;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0,0.25);
+  }
+  .img-background {
+    float: left;
+    width: 70%;
+    height: 100%;
+   
+  }
+  
+  .img-q2-logo { 
+    float: left;
+    width: 28%;
+    margin-top: 3%;
+    margin-left: 10px;
+  }
+  
+
+  
+  .content-login {
+    position: absolute;
+    font-weight: bold;
+    top: 40%;
+    left: 30%;
+  }
+  
+
+  .hideClass {
+    display: none;
+    visibility: hidden;
+  }
+
+  .showClass {
+    display: block;
+    visibility: visible;
+  }

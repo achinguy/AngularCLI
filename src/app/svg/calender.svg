@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="14px" height="15px" viewBox="0 0 14 15" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 53.2 (72643) - https://sketchapp.com -->
+    <title>Shape</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="e-calendar" fill="#0065A1">
+            <g id="Group-15">
+                <path d="M12,1.5 L11.25,1.5 L11.25,0 L9.75,0 L9.75,1.5 L3.75,1.5 L3.75,0 L2.25,0 L2.25,1.5 L1.5,1.5 C0.675,1.5 0,2.175 0,3 L0,13.5 C0,14.325 0.675,15 1.5,15 L12,15 C12.825,15 13.5,14.325 13.5,13.5 L13.5,3 C13.5,2.175 12.825,1.5 12,1.5 L12,1.5 Z M12,13.5 L1.5,13.5 L1.5,5.25 L12,5.25 L12,13.5 L12,13.5 Z" id="Shape"></path>
+            </g>
+        </g>
+    </g>
+</svg>

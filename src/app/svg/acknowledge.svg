@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="16px" height="15px" viewBox="0 0 16 15" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 53.2 (72643) - https://sketchapp.com -->
+    <title>acknowledge-default</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <polygon id="path-1" points="0 0 11.5 0 11.5 6.58227539 8 10 3.625 10 0.0559578941 6.67997985"></polygon>
+    </defs>
+    <g id="Dashboard-Study" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="expand-menu" transform="translate(-513.000000, -456.000000)">
+            <g id="Group-9" transform="translate(259.000000, 82.000000)">
+                <g id="BODY" transform="translate(20.000000, 20.000000)">
+                    <g id="notificat-1" transform="translate(0.000000, 302.000000)">
+                        <g id="query" transform="translate(234.000000, 33.000000)">
+                            <g id="acknowledge-default" transform="translate(0.000000, 19.000000)">
+                                <g>
+                                    <path d="M0.625,14.5 L14.625,14.5 L14.625,5.60666739 L9.46829165,1.23653269 L7.3751739,1.24999914 L5.19919075,1.24597472 L0.625,5.58971496 L0.625,14.5 Z M0.125,5.375 L5,0.745605469 L7.37609863,0.75 L9.65026855,0.735351562 L15.125,5.375 L15.125,15 L0.125,15 L0.125,5.375 Z M9.79431878,9.93335757 L9.69628128,9.93335757 L9.62437761,10 L9.79431878,9.93335757 Z M10.3005132,10.0550658 L15.0535199,14.5011506 L14.7119526,14.8662969 L9.97299895,10.4333576 L5.20552095,10.4333576 L0.466567248,14.8662969 L0.125,14.5011506 L4.87800667,10.0550658 L0.0892599465,5.61671515 L0.429142279,5.25 L5.48223861,9.93335757 L9.69628128,9.93335757 L14.7493776,5.25 L15.0892599,5.61671515 L10.3005132,10.0550658 L10.3005132,10.0550658 Z" id="Shape" fill="#000000" fill-rule="nonzero"></path>
+                                    <g id="Group-2" transform="translate(1.875000, 0.000000)">
+                                        <mask id="mask-2" fill="white">
+                                            <use xlink:href="#path-1"></use>
+                                        </mask>
+                                        <use id="Mask" fill="#CF0A2C" xlink:href="#path-1"></use>
+                                        <g mask="url(#mask-2)" fill-rule="nonzero">
+                                            <path d="M0.5,0.5 L0.5,10 L11,10 L11,0.5 L0.5,0.5 Z M0,0 L11.5,0 L11.5,10.5 L0,10.5 L0,0 Z" id="Rectangle-2" fill="#CF0A2C"></path>
+                                            <path d="M7,2.4375 L7,1.9375 L9.5,1.9375 L9.5,2.4375 L7,2.4375 Z M2,3.8125 L2,3.3125 L4.5,3.3125 L4.5,3.8125 L2,3.8125 Z M2,5.02083333 L2,4.52083333 L9.5,4.52083333 L9.5,5.02083333 L2,5.02083333 Z M2,6.22916667 L2,5.72916667 L9.5,5.72916667 L9.5,6.22916667 L2,6.22916667 Z M2,7.4375 L2,6.9375 L5.75,6.9375 L5.75,7.4375 L2,7.4375 Z" id="Combined-Shape" fill="#FFFFFF"></path>
+                                        </g>
+                                    </g>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

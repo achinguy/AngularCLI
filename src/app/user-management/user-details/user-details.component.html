@@ -1,0 +1,56 @@
+<p class="user-details-title">
+  user-details works!
+
+  Redirected from User Info Page
+</p>
+
+<form class="form" [formGroup]="userDetailsForm">
+  <div class="mdl-grid">
+    <div class="mdl-cell mdl-cell--12-col mdl-cell--12-col-phone">
+      <div class="mdl-grid">
+        <div class="mdl-cell mdl-cell--3-col mdl-cell--3-col-phone box-left">
+          <div class="additional-content">
+            <div class="mdl-grid">
+              <div class="material-group">
+                <input class="inputMaterial" type="text" formControlName="Id" name="Investigator">
+                <span class="highlight"></span>
+                <span class="bar"></span>
+                <label class="material-label" i18n>ID</label>
+              </div>
+              <div class="mdl-cell mdl-cell--6-col mdl-cell--2-col-phone w-40">
+                <div class="material-group">
+                  <input class="inputMaterial" type="text" formControlName="Name" name="Name">
+                  <span class="highlight"></span>
+                  <span class="bar"></span>
+                  <label class="material-label" i18n>Name</label>
+                </div>
+              </div>
+              <div class="mdl-cell mdl-cell--6-col mdl-cell--2-col-phone w-60">
+                <div class="material-group">
+                  <input class="inputMaterial" type="text" formControlName="Address" name="Address">
+                  <span class="highlight"></span>
+                  <span class="bar"></span>
+                  <label class="material-label" i18n>Address</label>
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+
+    </div>
+  </div>
+</form>
+
+<div *ngFor="let color of colors" class="border"  pDraggable="color"
+                (onDragStart)="dragStart($event,color)" (onDragEnd)="dragEnd($event)">
+	{{color}}
+</div>
+
+
+<div class="drop" pDroppable="color"  (onDrop)="drop($event)">
+  <div *ngFor="let c of droped">{{c}}</div>
+</div>

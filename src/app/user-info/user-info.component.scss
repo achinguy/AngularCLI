@@ -1,0 +1,231 @@
+
+
+.communications-gird {
+  a {
+    cursor: pointer;
+  }
+
+    .mat-header-cell, .mat-cell {
+          background: transparent; 
+          color: red;
+    } 
+    .mat-header-name {
+            width: 12%;
+    }
+    .cdk-column-address {
+        width: 12%;
+    }
+    .mat-column-labelLine1 {
+        width: 10%;
+    }
+    .cdk-column-receiptTime {
+        width: 10%;
+    }
+    .cdk-column-timepoint {
+        width: 10%;
+    }   
+    .cdk-column-sampleStatus {
+        width: 10%;
+    }
+    .cdk-column-lifecycleName, .mat-column-lifecylceStepName {
+        width: 12%;
+    }
+    .mat-column-facilityName {
+        width: 12%;
+    }
+    .mat-column-testingFacility {
+        width: 12%;
+    }
+    .mat-row:nth-child(odd) {
+       background: transparent;     
+    }
+
+
+.img-delete {
+    cursor: pointer;
+    content: url('../svg/delete.svg');
+}
+
+.img-edit {
+    cursor: pointer;
+    content: url('../svg/edit.svg');
+}
+
+.img-save {
+    cursor: pointer;
+    content: url('../svg/save.svg');
+}
+
+.img-cancel {
+    cursor: pointer;
+    content: url('../svg/cancel.svg');
+}
+
+.edit-icon {
+    margin-right: 15px;
+    margin-left: 15px;
+}
+
+.panel-class {
+    mat-dialog-container{
+        background: black !important;
+        border: black !important;
+    }
+}
+::ng-deep .cdk-overlay-pane {
+    position: relative;
+    background: #fff;
+}
+
+
+.mat-table > .mat-header-row > .mat-header-cell, .mat-table > .mat-header-row > .mat-cell, .mat-table > .mat-row > .mat-header-cell, .mat-table > .mat-row > .mat-cell, .popup-grid.mat-table > .mat-header-row > .mat-header-cell, .popup-grid.mat-table > .mat-header-row > .mat-cell, .popup-grid.mat-table > .mat-row > .mat-header-cell, .popup-grid.mat-table > .mat-row > .mat-cell {
+    display: table-cell;
+    height: auto;
+    vertical-align: middle;
+  }
+  .mat-cell{
+    font-size: 12px !important;
+     a {
+      cursor: pointer;
+    }
+  }
+  .mat-table {
+    overflow: auto;
+    max-height: 50%;
+  }
+  
+  .mat-header-cell {
+    text-transform: uppercase;
+    font-weight: bolder;
+    color: black;
+    margin-top: 0;
+    background: none !important;
+  }
+  
+  .testName {
+    cursor: pointer;
+    color: blue;
+  }
+
+  .search-button-div{
+    margin-top: 3%;
+    margin-bottom: -2%;
+  }
+  
+  .mat-header-row{
+    display:flex;
+    position: sticky;
+    top: 0;
+    background: inherit;
+    z-index: 100;
+  }
+  
+  .mat-row{
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
+    display:flex;
+    min-height: 35px !important;
+  }
+  mat-header-cell {
+    padding:5px;
+  }
+
+  .testName {
+    cursor: pointer;
+    color: blue;
+  }
+
+  .scroll {
+    height: 400px;
+    overflow: auto;
+  }
+
+  ::ng-deep .mat-paginator-container {
+    min-height: 34px !important;
+    padding: 0 !important;
+  }
+
+  .mdl-grid.full-width.test-detail-field{
+    height: 60px;
+    margin-top: 4%;
+  }
+
+  .searchText {
+      border-top-left-radius:22px;
+      border-bottom-left-radius:22px;
+      margin-right: -4px;
+      width: 25%;
+      height: 26px!important;
+  }
+
+  .searchButton {
+    background: blue;
+    border: 0;
+    color: white;
+    box-shadow: inherit;
+    margin-bottom: 25px;
+    padding: 0 31px;
+    line-height: 30px !important;
+    border-top-right-radius: 22px;
+    border-bottom-right-radius: 22px;
+    width: 100px;
+  }
+
+  .footer-container {
+    margin-bottom: 3px;
+    border-top: 2px solid blue;
+  }
+
+  .refer-icon{
+    vertical-align: middle;
+    margin-right: 0px;
+    margin-top: -5px;
+    height: 20px;
+    cursor: pointer;
+  }
+
+  mat-cell:nth-child(1) {
+    flex: 0 0 18%;
+    padding-right: 0.6%;
+  }
+
+  mat-header-cell:nth-child(1) {
+    flex: 0 0 18%;
+    padding-right: 0.6%;
+  }
+
+  .paginator {
+    float: right;
+    width: 60%;
+    margin-top: 15px;
+  }
+
+  .paginator a:hover {
+    background-color: gray;
+    color: black;
+  }
+
+  .next-icon {
+    font-size: 13px;
+    margin-right: 50px;
+  }
+  
+  .fa {  
+    font-size:18px;
+    cursor: pointer;
+  }
+
+  .next {
+    color: black;
+    margin-left: 30px;
+  }
+  
+  .disable-icon {
+    pointer-events: none;
+  }
+
+  ::ng-deep .my-tooltip {
+    white-space: pre-line !important;
+    height:  auto;
+    max-height: 150px;
+  }
+}

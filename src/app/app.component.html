@@ -1,0 +1,70 @@
+
+<!-- <div class="layout-menu">
+  <div class="menu">
+
+    <div class="progress-bar">
+      <mat-progress-bar mode="indeterminate" *ngIf="loadingRoute"></mat-progress-bar>
+    </div>
+    <a href="../" class="navbar-brand">Our Routes</a>
+    <button mat-button menuItem name="dashboard" routerLink="about">
+      <mat-icon svgIcon="home"></mat-icon>
+      <div>About</div>
+    </button>
+    <button mat-button menuItem name="expenses" routerLink="services">
+      <mat-icon svgIcon="list"></mat-icon>
+      <div>Services</div>
+    </button>
+    <button mat-button menuItem name="contactus" routerLink="contactus">
+      <mat-icon svgIcon="settings"></mat-icon>
+      <div>Contact us</div>
+    </button>
+    <button mat-button menuItem name="settings" routerLink="userinfo">
+      <mat-icon svgIcon="settings"></mat-icon>
+      <div>User Info</div>
+    </button>
+  </div>
+</div> -->
+<div>
+  <div>  
+    <ng-container>      
+      <!-- app header -->
+      <app-header [sidenav]="sidenav" [isExpanded]="isExpanded" [isTabletView]="isTabletView" (expandchange) = "isExpandedChange($event)"></app-header>
+  
+      <mat-sidenav-container class="page-container" autosize>
+        <!-- app left side navigation -->
+        <mat-sidenav #sidenav mode="{{isMobileView?'over':'side'}}" opened="{{!isMobileView}}" class="mat-elevation-z8">
+          <app-left-nav [sidenav]="sidenav" [isMobileView]="isMobileView" [isExpanded]="isExpanded"></app-left-nav>
+        </mat-sidenav>
+       
+   
+        <!-- app right side global navigation -->
+        <!-- <mat-sidenav #globalsidenav mode="side" opened="true" class="global-sidenav" position="end">
+          <app-global-panel></app-global-panel>
+        </mat-sidenav> -->
+        
+  
+        <!-- app main -->
+        <!--TODO:  <mat-sidenav-content> -->
+        <section>
+          <div class="page-body">
+            <router-outlet></router-outlet>
+
+
+            dddddd
+            <p class="footer-p" style="flex-grow: 1"></p>
+             <!-- app footer -->
+            <app-footer></app-footer>        
+          </div>
+        </section>
+        <!-- </mat-sidenav-content> -->
+        <!-- app main component -->
+      </mat-sidenav-container>
+      <app-spinner></app-spinner>
+    </ng-container>
+  </div>
+  </div>
+  
+
+<!-- <div [ngxInactivity]="idleTimeout" (ngxInactivityCallback) = "handleInactivityCallback()">
+
+</div> -->

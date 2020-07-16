@@ -1,0 +1,287 @@
+::ng-deep mat-checkbox.ng-dirty .mat-checkbox-background {
+    background-color: #2196f3 !important;
+    border: 2px solid #2196f3 !important;
+}
+
+::ng-deep mat-checkbox.ng-dirty .mat-checkbox-frame {
+    border-color: #2196f3 !important;
+}
+
+::ng-deep mat-checkbox.mat-checkbox-anim-checked-unchecked.ng-dirty .mat-checkbox-background{
+    background: #fff !important;
+}
+
+.user-details-title {
+    color: #333e4b;
+    padding: 10px 0 0 0px;
+    margin: 0;
+    text-align: left;
+    font-weight: 600;
+    font-size: 13px;
+    img {
+      position: absolute;
+      cursor: pointer;
+      right: 0;
+      top: -2px;
+    }
+    z-index: 150;
+  }
+
+  .visitId {
+    margin: -4px 0 0;
+    color: #00A7CE;
+}
+ .study-label {
+    float: right;
+    color: red;
+    margin-top: 12%; 
+ }
+
+.visit-details-content {
+  margin:0;
+  padding: 4px 15px 0 !important;
+  z-index: 150;
+  max-height: fit-content;
+  border:0;
+  .material-group {
+    margin: 1rem 10px 1rem 0;
+  }
+  hr {
+      margin: 0 0 10px;         
+  }
+  .divider {
+    border-top: 1px solid #0065A1 !important;
+    margin-bottom: 10px;
+  }
+}
+.ltms-accessing-theme .material-group {
+.inputMaterial {
+width: 100% !important;
+text-overflow: ellipsis;
+&.long-text {
+    width: 98.5% !important;
+}
+}
+.bar {
+width: 100% !important;
+}
+}
+.additional-content {
+  .material-group {
+      margin-bottom: 5px;
+      height: 40px;
+  }
+
+  .Replaced{
+      margin-left: -5px;
+  }
+  
+  .drop-down {
+    padding-left: 5px;
+  }
+  .gender {
+    margin-left: 17px;
+    width: 12%;
+  }   
+  .race {
+      margin-top: 8px;
+      ::ng-deep .mat-form-field-underline{
+        bottom: 13px;
+    }
+  }
+}
+::ng-deep .mat-checkbox-label {
+  font-size: 14px;
+}
+.attachments {
+width: 40%;
+text-align: center;
+background: #f7feff;
+border: 1.2px dotted #ddd;
+padding: 3px;
+font-size: 12px;
+margin-top: 3%;
+  .title {
+      position: absolute;
+      top: -9px;
+      left: 5px;          
+      background: #fff;
+  }
+  em {
+    font-size: 25px;
+    color: #0065A1;
+  }
+  .dnd, .or {
+      position: relative;
+      top: -5px;
+  }
+  .or {
+      margin: 0 20px;
+  }
+}
+.mat-table > .mat-header-row > .mat-header-cell, .mat-table > .mat-header-row > .mat-cell, .mat-table > .mat-row > .mat-header-cell, .mat-table > .mat-row > .mat-cell, .popup-grid.mat-table > .mat-header-row > .mat-header-cell, .popup-grid.mat-table > .mat-header-row > .mat-cell, .popup-grid.mat-table > .mat-row > .mat-header-cell, .popup-grid.mat-table > .mat-row > .mat-cell {
+display: table-cell;
+height: auto;
+vertical-align: middle;  
+font-size: 13px;
+text-align: center;
+}
+.mat-table {
+overflow-y: auto;
+max-height: 187px;
+&.full-height {
+ height: 300px;
+}   
+}
+.mat-header-cell {
+text-transform: uppercase;
+font-weight: bolder;
+}
+.mat-header-row{
+display:flex;
+position: sticky;
+top: 0;
+background: rgb(216, 216, 216);
+z-index: 100;
+min-height: 40px;
+}
+
+.mat-row{
+display:flex;
+height: 20px;
+}
+.mat-header-row .mat-header-cell {
+height: 10px !important;
+}
+.mat-header-cell {
+font-size: 12px;
+font-weight: bold;
+color: #333E4B;
+padding-top: 1%;
+text-align: center;
+height: 22px !important;
+}
+.mat-cell {
+padding-left: 0px;
+font-size: 12px;
+}
+
+.mat-header-row {
+display: flex;
+min-height: 25px;
+}
+.mat-row {
+display: flex;
+min-height: 35px;
+}
+[hidden] { 
+display: none !important;
+}
+.paging {
+::ng-deep .mat-form-field-underline {
+    bottom: 7px;
+}  
+}
+.back-link {
+color: #0065A1;
+padding-left: 0 !important;
+float: right;
+margin-top: -5%;
+margin-right: 3%;
+font-size: 14px;
+font-weight: 100;
+cursor: pointer;
+background-color: white;
+border: none;
+}
+.mat-dialog-content {
+padding: 0 !important;
+}
+.mat-form-field-invalid {
+color: red;
+}
+
+
+.w-40 {
+    width: 40%;
+}
+
+.w-60 {
+    width: 60%;
+}
+
+.w-21 {
+    width: 21%;
+}
+
+.w-22 {
+    width: 22%;
+}
+
+.w-15 {
+    width: 15%;
+}
+.box-left {
+    padding-right: 3px;
+    border-right: 1px solid blue;
+    margin-right: 3px;
+    width: 20%;
+}
+
+.box-right {
+    padding-left: 6px; 
+}
+
+.VisitType {
+    margin-left: 14px;
+}
+.checkbx {
+    .material-group {
+        margin: 5px;
+    }
+}
+
+::ng-deep .mat-tab-label {
+    width: 225px;
+    height: 39px;
+}
+
+::ng-deep .mat-tab-label-active {
+    color: #0065A1;
+}
+
+.mat-tab-body-content {
+    background: white;
+}
+
+.checkbx {
+    margin: 5px 0px 5px 43px;
+}
+
+.chkBox {
+    margin-left: -67px; 
+}
+
+.white {
+    background: white;
+}
+
+p {
+    display: none !important;
+}
+
+p {
+  font-family: Lato;
+}
+
+.border {
+  border:1px solid #ccc;
+  margin: 1rem 0;
+  padding: 0.25rem;
+  cursor: pointer;
+}
+
+.drop {
+  border: 1px dashed #ccc;
+  padding: 1rem;
+}

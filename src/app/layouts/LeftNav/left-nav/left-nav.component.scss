@@ -1,0 +1,58 @@
+.sideBar-nav-links {
+    font-size: 1rem;
+    display: flex;
+  }
+  
+  .sideBar-nav-links:focus {
+    outline: none;
+  }
+  
+  .sideBar-nav-links-text {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin-left: .8rem;
+  }
+  
+  .sideBar-nav-icon-links {
+    justify-content: center;
+  }
+  
+  .sideBar-nav-text-links {
+    justify-content: flex-start;
+  }
+  @media only screen and (max-width: 600px) {
+    .page-container{
+      top: 53px;
+    }
+    .menu-icon.menu-closed,
+    .menu-icon {
+  
+      left: 1rem;
+      top: 6px;
+    }
+    .logo {
+      left: 80px;
+    }
+  }
+  .log-icon {
+   vertical-align: bottom;
+  }
+  
+  .icon-size {
+    font-size: .71em;
+  }
+  
+  .report-delivery-icon {
+    height: 16px;
+    width: auto;
+  }
+  .sample-pull-request-icon {
+    height: 16px;
+    width: auto;
+  }
+  
+  .study-icon {
+    height: 16px;
+    width: auto;
+  }
