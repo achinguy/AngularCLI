@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { MaterialModule } from '../../material.component';
-import { GlobalPanelComponent } from './global-panel.component';
+// import { GlobalPanelComponent } from './global-panel.component';
 import { AttachmentComponent } from './attachment/attachment.component';
 import { HelpComponent } from './help/help.component';
 import { GlobalPanelService } from './global-panel.service';
@@ -10,6 +10,6 @@ import { GlobalPanelService } from './global-panel.service';
   imports: [
     CommonModule
   ],
-  declarations: [GlobalPanelComponent, AttachmentComponent, HelpComponent]
+  declarations: [AttachmentComponent, HelpComponent]
 })
 export class GlobalPanelModule { }

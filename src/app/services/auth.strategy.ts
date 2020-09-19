@@ -20,12 +20,14 @@ export const AUTH_STRATEGY = new InjectionToken<AuthStrategy<any>>('AuthStrategy
 export const authStrategyProvider = {
   provide: AUTH_STRATEGY,
   deps: [HttpClient],
-  useFactory: (http: HttpClient) => {
-    switch (config.auth) {
-        case 'session':
-          return new SessionAuthStrategy(http);
-        case 'token':
-          return new JwtAuthStrategy();
-      }
-  }
+  useFactory: useFactoryStategy
 };
+
+export function useFactoryStategy(http: HttpClient) {
+  switch (config.auth) {
+    case 'session':
+      return new SessionAuthStrategy(http);
+    case 'token':
+      return new JwtAuthStrategy();
+  }
+}

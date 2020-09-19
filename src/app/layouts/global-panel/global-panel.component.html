@@ -23,16 +23,16 @@
   <mat-card class="template-class height_100" (blur)="onBlur()">
     <div>
       <div *ngIf="showComponent == 'attach'">
-        <app-attachment [entityId]="entityId" [screenName]="screenName" [isViewEdit]="isViewEdit" (refreshCount)="getAttachmentCount()"></app-attachment>
+        <app-attachment [screenName]="screenName" [isViewEdit]="isViewEdit" (refreshCount)="getAttachmentCount()"></app-attachment>
       </div>
       <!-- TODO: Demo <div *ngIf="showComponent == 'notes'">
         <p class="m_5">Notes Component</p>
       </div> -->
       <div *ngIf="showComponent == 'list'">
-        <app-audit-trail [entityId]="entityId" [screenName]="screenName" *ngIf="showComponent == 'list'"></app-audit-trail>
+        <app-audit-trail [screenName]="screenName" *ngIf="showComponent == 'list'"></app-audit-trail>
       </div>
       <div *ngIf="showComponent == 'report'">
-        <app-report [screenName]="screenName" (openReport)="openReport($event)" [entityId]="entityId" [reportEntity]="reportEntity"
+        <app-report [screenName]="screenName" (openReport)="openReport($event)" [reportEntity]="reportEntity"
           [entityInfo]="entityInfo"></app-report>
       </div>
     </div>

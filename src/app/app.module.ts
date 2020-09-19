@@ -88,8 +88,8 @@ import {
     // NgxInactivity,
     StorageServiceModule
   ],
-  providers: [AppHttpClient, UserService, AuthGuard, CommonService, SessionStorage, NotificationService, SpinnerService, AuthService, authStrategyProvider,
-    // { provide: HTTP_INTERCEPTORS, useClass: SpinnerInterceptor, multi: true },
+  providers: [AppHttpClient, UserService, AuthGuard, CommonService, SessionStorage, NotificationService, SpinnerService, AuthService, 
+    authStrategyProvider,
     { provide: HTTP_INTERCEPTORS, useClass: AuthInterceptor, multi: true },
     {
       provide: AppHttpHandler,
@@ -108,7 +108,8 @@ import {
   ],
   bootstrap: [AppComponent],
   schemas: [
-    CUSTOM_ELEMENTS_SCHEMA
+    CUSTOM_ELEMENTS_SCHEMA,
+    NO_ERRORS_SCHEMA
   ],
   entryComponents: [NotificationComponent, ConfirmationComponent],
 

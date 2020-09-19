@@ -44,7 +44,7 @@ class AppHandlerHttpClient extends HttpClient {
  */
 @Injectable()
 export class AppHttpClient {
-  private baseURL;
+  private baseURL:any;
   private http: AppHandlerHttpClient;
   constructor(injector: Injector) {
     this.baseURL = environment.endPointConfig.baseURL;
