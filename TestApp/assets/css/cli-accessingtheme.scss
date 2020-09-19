@@ -1,0 +1,297 @@
+/* 
+Global Theme for CLI
+*/
+
+/* loading fonts */
+
+
+  @font-face {
+    font-family: "swis721_cn_btroman";
+    src: url("/assets/fonts/swiss721/tt0009m_-webfont.woff2") format("woff2"),
+    url("/assets/fonts/swiss721/tt0009m_-webfont.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+  
+  }
+  
+  @font-face {
+    font-family: "swis721_cn_btbold";
+    src: url("/assets/fonts/swiss721/tt0010m_-webfont.woff2") format("woff2"),
+    url("/assets/fonts/swiss721/tt0010m_-webfont.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+/* LTMS global theme */
+
+.ltms-accessing-theme{
+    font-family: "swis721_cn_btroman" !important;
+    .mat-primary .mat-option.mat-selected:not(.mat-option-disabled){
+      color:#407cca !important;
+    }
+    .header-title{
+      color: #333E4B !important;   
+    }
+    h1, h2, h3, h4, h5, h6, a, span{
+      font-family: "swis721_cn_btroman" !important;
+    }
+    h2 {   
+      font-weight: bold;    
+    }
+    .mat-option span{
+      font-family: "swis721_cn_btroman" !important;
+      color:#000; 
+    }
+    input{
+      font-family: "swis721_cn_btroman" !important;
+      padding: 0 !important;
+      font-size: 16px !important;
+      height: 32px !important;
+      outline: none;
+      padding-left: 2% !important;
+    }
+    textarea, select,button,mat-select,mat-checkbox{
+      font-family: "swis721_cn_btroman" !important;
+    }
+    .input-search,.input-group-addon a{
+      background: #407cca !important;
+      color: #fff  !important;
+      text-align: -webkit-center;
+      line-height: 34px !important;
+      height: 35px  !important;
+      cursor: pointer;
+    }
+    .inputbox{
+      font-size: 14px !important;
+      height: 30px;
+    }
+    .mat-raised-button.mat-primary{
+      background: #407cca;
+    }
+    .mat-raised-button.mat-gray {
+        background: #e5e5e4;
+    }
+    .mat-radio-button.mat-accent.mat-radio-checked .mat-radio-outer-circle{
+      border-color: #407cca;
+    }
+    .mat-radio-button.mat-accent .mat-radio-inner-circle{
+      background-color: #407cca;
+    }
+    .mat-checkbox-checked.mat-primary .mat-checkbox-background{
+      background-color:#000;
+    }
+    .mat-table{
+      font-family: "swis721_cn_btroman" !important;
+      .mat-header-row{
+        background: #f9f9f9;
+      }
+    }
+    .material-group{
+      color: #333E4B !important;
+      .material-label{
+        font-size: 12px !important;  
+        font-family: "swis721_cn_btroman" !important; 
+      }
+      .bar{
+        width: calc(100% - 2rem);
+      }
+      .bar:before,.bar:after{
+        background: #4285f4;
+      } 
+    }
+    .grid {
+        .mat-header-row{
+          min-height: 40px;
+          .mat-header-cell{
+             height: 40px !important;
+          }
+        }
+        .mat-sort-header-container {
+          position: relative;
+          height: 40px;
+          vertical-align: middle;
+        }
+        .mat-sort-header-container:after {
+          position: absolute;
+          bottom: 0px;
+          left: 0;
+          background: none;
+          width: 82%;
+          height: 2px;
+          content: "";
+          display: block;
+        }
+        .mat-table {
+          font-family: "swis721_cn_btroman";
+          .mat-row:nth-child(odd){
+              background-color: #f9f9f9;
+          }
+          span{
+            font-family: "swis721_cn_btroman";
+          }
+          .mat-header-cell{
+            font-weight: bold;
+            height: 40px;
+          }
+          .mat-select{
+            width: 96%;
+            border-bottom: 1px solid;
+          }
+          .mat-checkbox-checked.mat-accent .mat-checkbox-background{
+            background-color: #000;
+          }
+          .mat-checkbox-inner-container{
+            height:14px;
+            width: 14px;
+          }
+          .mat-row{
+            min-height:30px;
+            .mat-cell{
+                height: 30px;
+                padding: 5px 0px;
+                border-bottom:1px solid #e9e2e2
+            }
+          }
+        }  
+      }
+      .mat-tab-group {
+        font-family: "swis721_cn_btroman" !important;
+      }
+     .mat-tab-label {
+        font-family: "swis721_cn_btroman" !important;
+        font-size: 14px !important;
+        font-weight: normal;
+        background: #FAFAFA !important;
+      }  
+}
+
+/* mat group style */
+.mat-optgroup-label{
+  background-color: #f5f5f5;
+  border: 1px solid #bababa;
+  color: #888f96;
+  font-size: 14px;
+  color: #000;
+  font-weight: bolder;
+}
+
+.quick-search-box{
+  .mat-select-panel{
+    min-width: calc(100% + 32px) !important;
+    margin-left: 13%  !important;
+  }
+  .cdk-overlay-pane{
+    min-width: 318px !important;
+    left: 155.5px !important;
+    top: 158.863px !important;
+  }  
+}
+
+.custom-modalbox {
+  mat-dialog-container {
+    background: black !important;
+    border: black !important;
+  }
+}
+
+.mat-dialog-container-black {
+  .mat-dialog-container{
+    background: black !important;
+    border: black !important;
+  }
+}
+
+.mat-dialog-container-white {
+  .mat-dialog-container{
+    background: white !important;
+    border: white !important;
+    height: 677px;
+    width: 360px;
+    margin-top: -75px;
+  }
+}
+
+  /* new ions */
+  
+  [class^="icon-new-"], [class*=" icon-new-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'LTMS' !important;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  .icon-new-container-receipt:before {
+    content: "\e910";
+  }
+  .icon-new-create-kit:before {
+    content: "\e911";
+  }
+  .icon-new-shipment-management:before {
+    content: "\e905";
+  }
+  .icon-new-ctm-order-management:before {
+    content: "\e906";
+  }
+  .icon-new-configuration:before {
+    content: "\e907";
+  }
+  .icon-new-ctm-printing:before {
+    content: "\e908";
+  }
+  .icon-new-ctm-orders:before {
+    content: "\e909";
+  }
+  .icon-new-accession-viewer:before {
+    content: "\e90a";
+  }
+  .icon-new-sample-routing:before {
+    content: "\e90b";
+  }
+  .icon-new-ctm-qc:before {
+    content: "\e90c";
+  }
+  .icon-new-ctm-assembly:before {
+    content: "\e90d";
+  }
+  .icon-new-batch-reciept:before {
+    content: "\e90e";
+  }
+  .icon-new-data-management:before {
+    content: "\e90f";
+  }
+  .icon-new-checkout:before {
+    content: "\e900";
+  }
+  .icon-new-billing:before {
+    content: "\e901";
+  }
+  .icon-new-logistics:before {
+    content: "\e902";
+  }
+  .icon-new-kit-production:before {
+    content: "\e903";
+  }
+  .icon-new-home:before {
+    content: "\e904";
+  }
+  .icon-new-entity_edit:before {
+    content: "\e915";
+  }
+  .icon-new-add:before {
+    content: "\e916";
+  }
+  .icon-new-communication_center:before {
+    content: "\e912";
+  }
+  .icon-new-import:before {
+    content: "\e913";
+  }
+  .icon-new-manual_billing:before {
+    content: "\e914";
+  }
